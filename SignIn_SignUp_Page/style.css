@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    background-color: rgb(211, 211, 213);
+}
+
+.form-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-login-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    width: 20rem;
+    padding: 1rem;
+}
+
+
+.signup-login-container #signIn-container,
+.signup-login-container #signUp-container {
+    display: none;
+}
+
+#signin-button:checked~#signIn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#signup-button:checked~#signUp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-login-container .input-containers input {
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 12rem;
+    font-size: 1rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+}
+
+.signup-login-container .input-containers input::placeholder {
+    font-weight: bold;
+    font-family: sans-serif monospace;
+}
+
+.signIn-btn {
+    background-color: rgb(104, 129, 128);
+    font-family: sans-serif 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.signIn-btn:hover {
+    background-color: cyan;
+    color: black;
+    cursor: pointer;
+}
+
+.logIn-btn {
+    background-color: cyan;
+    font-family: sans-serif 'Courier New', Courier, monospace;
+    color: black;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.logIn-btn:hover {
+    background-color: rgb(104, 129, 128);
+    color: rgb(238, 234, 234);
+    cursor: pointer;
+}
+
+.signup-login-container label {
+    display: inline-block;
+    background-color: lightgray;
+    padding: 0.4rem;
+    border-radius: 0.2rem;
+    color: rgb(172, 100, 100);
+    margin: 0.2rem;
+    /* Optional: Add margin for spacing */
+}
